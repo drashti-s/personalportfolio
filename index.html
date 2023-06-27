@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drashti's Portfolio</title>
+  </head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@300;700&family=Poppins&family=Source+Code+Pro:wght@300&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(227, 244, 244);
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      font-family: "Manrope", sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 85px;
+      background-color: rgb(202, 247, 227);
+      padding-bottom: 15px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      font-family: "Manrope", sans-serif;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 25px;
+      padding-top: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    nav ul li a:hover {
+      color: rgb(113, 73, 198);
+    }
+    main {
+      height: 2px;
+      margin: 40px 84px;
+    }
+    main hr {
+      width: 100%;
+      border-style: solid;
+      border-color: darkgrey;
+    }
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 70px;
+      align-items: center;
+    }
+    .firstsection > div {
+      width: 30%;
+    }
+    .leftsection {
+      font-size: 3rem;
+      font-weight: 540;
+    }
+    .rightsection img {
+      width: 130%;
+      mix-blend-mode: darken;
+    }
+    .purple {
+      color: rgb(189, 144, 231);
+    }
+    .secoundsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 70px;
+      align-items: center;
+    }
+    .logo 
+    {
+      margin: 11px 24px;
+      font-size: 55px;
+      width: 50px;
+      list-style: none;
+      text-decoration: none;
+      color: rgb(26, 26, 148);
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    .git
+    {
+        text-decoration: none;
+        color: black;  
+    }
+    .twitter
+    {
+        margin: 1px 24px;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Drashti's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="cv.html">My CV</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hey.My name is <span class="purple">Drashti.</span>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="devloper.jpg" />
+        </div>
+      </section>
+      <section class="secoundsection">
+        <div class="logo">
+            <div class="leftsection">
+                <a href="https://www.linkedin.com/in/drashti-suthar-33931b242"target="blank" class="logo">
+                    <i class="fa-brands fa-linkedin"></i>   
+                </a>
+            </div>
+            <div class="git">
+                <a href="https://github.com/drashti-s"target="blank" class="git">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/drashtiisuthar?t=W585IFvdX4nmRTDDNXsQww&s=09"target="blank" class="git">
+                    <i class="fa-brands fa-square-twitter" style="color: #1776cf;"></i>
+                </a>
+            </div>
+        </div>
+        </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["I am student.", "&amp; I am an intern."],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>
